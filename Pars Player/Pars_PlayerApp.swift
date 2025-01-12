@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Pars_PlayerApp: App {
+    @StateObject private var channelsViewModel = ChannelsViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(channelsViewModel)
         }
+        .windowStyle(.titleBar)
+        .windowToolbarStyle(.unified)
     }
 }
