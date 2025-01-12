@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFD0908E2D33CC9400A19BE6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0908D2D33CC9400A19BE6 /* AudioToolbox.framework */; };
+		CFD090902D33CC9C00A19BE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0908F2D33CC9C00A19BE6 /* AVFoundation.framework */; };
+		CFD090922D33CCA400A19BE6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090912D33CCA400A19BE6 /* CFNetwork.framework */; };
+		CFD090942D33CCAB00A19BE6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090932D33CCAB00A19BE6 /* CoreFoundation.framework */; };
+		CFD090962D33CCB300A19BE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090952D33CCB300A19BE6 /* CoreGraphics.framework */; };
+		CFD090982D33CCBE00A19BE6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090972D33CCBE00A19BE6 /* CoreMedia.framework */; };
+		CFD0909A2D33CCC500A19BE6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090992D33CCC500A19BE6 /* CoreText.framework */; };
+		CFD0909C2D33CCCC00A19BE6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0909B2D33CCCC00A19BE6 /* CoreVideo.framework */; };
+		CFD0909E2D33CCD500A19BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0909D2D33CCD500A19BE6 /* Foundation.framework */; };
+		CFD090A02D33CCE200A19BE6 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0909F2D33CCE200A19BE6 /* libbz2.tbd */; };
+		CFD090A22D33CCEA00A19BE6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090A12D33CCEA00A19BE6 /* libc++.tbd */; };
+		CFD090A42D33CCF200A19BE6 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090A32D33CCF200A19BE6 /* libiconv.tbd */; };
+		CFD090A62D33CCF900A19BE6 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090A52D33CCF900A19BE6 /* libxml2.tbd */; };
+		CFD090A82D33CD0700A19BE6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090A72D33CD0700A19BE6 /* OpenGL.framework */; };
+		CFD090AA2D33CD0F00A19BE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090A92D33CD0F00A19BE6 /* QuartzCore.framework */; };
+		CFD090AC2D33CD1600A19BE6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090AB2D33CD1600A19BE6 /* Security.framework */; };
+		CFD090AE2D33CD1D00A19BE6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090AD2D33CD1D00A19BE6 /* VideoToolbox.framework */; };
+		EE91560E972F10ADADBEA763 /* Pods_Pars_Player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2823DBFA3C77702F6AD6640 /* Pods_Pars_Player.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0236F6EDF48D7DF49F4CC786 /* Pods-Pars Player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pars Player.debug.xcconfig"; path = "Target Support Files/Pods-Pars Player/Pods-Pars Player.debug.xcconfig"; sourceTree = "<group>"; };
+		A2823DBFA3C77702F6AD6640 /* Pods_Pars_Player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pars_Player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46F449EF8830C0713E9DB18 /* Pods-Pars Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pars Player.release.xcconfig"; path = "Target Support Files/Pods-Pars Player/Pods-Pars Player.release.xcconfig"; sourceTree = "<group>"; };
+		CF21939C2D329D080093D376 /* Pars Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pars Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD0908D2D33CC9400A19BE6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CFD0908F2D33CC9C00A19BE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CFD090912D33CCA400A19BE6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CFD090932D33CCAB00A19BE6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CFD090952D33CCB300A19BE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFD090972D33CCBE00A19BE6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CFD090992D33CCC500A19BE6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CFD0909B2D33CCCC00A19BE6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CFD0909D2D33CCD500A19BE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFD0909F2D33CCE200A19BE6 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		CFD090A12D33CCEA00A19BE6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CFD090A32D33CCF200A19BE6 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CFD090A52D33CCF900A19BE6 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		CFD090A72D33CD0700A19BE6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CFD090A92D33CD0F00A19BE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CFD090AB2D33CD1600A19BE6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CFD090AD2D33CD1D00A19BE6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CF21939E2D329D080093D376 /* Pars Player */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Pars Player";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2193992D329D080093D376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD090AE2D33CD1D00A19BE6 /* VideoToolbox.framework in Frameworks */,
+				CFD090AC2D33CD1600A19BE6 /* Security.framework in Frameworks */,
+				CFD090AA2D33CD0F00A19BE6 /* QuartzCore.framework in Frameworks */,
+				CFD090A82D33CD0700A19BE6 /* OpenGL.framework in Frameworks */,
+				CFD090A62D33CCF900A19BE6 /* libxml2.tbd in Frameworks */,
+				CFD090A42D33CCF200A19BE6 /* libiconv.tbd in Frameworks */,
+				CFD090A22D33CCEA00A19BE6 /* libc++.tbd in Frameworks */,
+				CFD090A02D33CCE200A19BE6 /* libbz2.tbd in Frameworks */,
+				CFD0909E2D33CCD500A19BE6 /* Foundation.framework in Frameworks */,
+				CFD0909C2D33CCCC00A19BE6 /* CoreVideo.framework in Frameworks */,
+				CFD0909A2D33CCC500A19BE6 /* CoreText.framework in Frameworks */,
+				CFD090982D33CCBE00A19BE6 /* CoreMedia.framework in Frameworks */,
+				CFD090962D33CCB300A19BE6 /* CoreGraphics.framework in Frameworks */,
+				CFD090942D33CCAB00A19BE6 /* CoreFoundation.framework in Frameworks */,
+				CFD090922D33CCA400A19BE6 /* CFNetwork.framework in Frameworks */,
+				CFD090902D33CC9C00A19BE6 /* AVFoundation.framework in Frameworks */,
+				CFD0908E2D33CC9400A19BE6 /* AudioToolbox.framework in Frameworks */,
+				EE91560E972F10ADADBEA763 /* Pods_Pars_Player.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2193932D329D080093D376 = {
+			isa = PBXGroup;
+			children = (
+				CF21939E2D329D080093D376 /* Pars Player */,
+				CF21939D2D329D080093D376 /* Products */,
+				D8456CD701FF7CE4A5A5A9DB /* Pods */,
+				D7C079A5CD40017267583382 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF21939D2D329D080093D376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF21939C2D329D080093D376 /* Pars Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7C079A5CD40017267583382 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD090AD2D33CD1D00A19BE6 /* VideoToolbox.framework */,
+				CFD090AB2D33CD1600A19BE6 /* Security.framework */,
+				CFD090A92D33CD0F00A19BE6 /* QuartzCore.framework */,
+				CFD090A72D33CD0700A19BE6 /* OpenGL.framework */,
+				CFD090A52D33CCF900A19BE6 /* libxml2.tbd */,
+				CFD090A32D33CCF200A19BE6 /* libiconv.tbd */,
+				CFD090A12D33CCEA00A19BE6 /* libc++.tbd */,
+				CFD0909F2D33CCE200A19BE6 /* libbz2.tbd */,
+				CFD0909D2D33CCD500A19BE6 /* Foundation.framework */,
+				CFD0909B2D33CCCC00A19BE6 /* CoreVideo.framework */,
+				CFD090992D33CCC500A19BE6 /* CoreText.framework */,
+				CFD090972D33CCBE00A19BE6 /* CoreMedia.framework */,
+				CFD090952D33CCB300A19BE6 /* CoreGraphics.framework */,
+				CFD090932D33CCAB00A19BE6 /* CoreFoundation.framework */,
+				CFD090912D33CCA400A19BE6 /* CFNetwork.framework */,
+				CFD0908F2D33CC9C00A19BE6 /* AVFoundation.framework */,
+				CFD0908D2D33CC9400A19BE6 /* AudioToolbox.framework */,
+				A2823DBFA3C77702F6AD6640 /* Pods_Pars_Player.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8456CD701FF7CE4A5A5A9DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0236F6EDF48D7DF49F4CC786 /* Pods-Pars Player.debug.xcconfig */,
+				C46F449EF8830C0713E9DB18 /* Pods-Pars Player.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF21939B2D329D080093D376 /* Pars Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2193AB2D329D090093D376 /* Build configuration list for PBXNativeTarget "Pars Player" */;
+			buildPhases = (
+				E5E1CBADA830372A820CD6D0 /* [CP] Check Pods Manifest.lock */,
+				CF2193982D329D080093D376 /* Sources */,
+				CF2193992D329D080093D376 /* Frameworks */,
+				CF21939A2D329D080093D376 /* Resources */,
+				D77024C8EF6D702435957C96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CF21939E2D329D080093D376 /* Pars Player */,
+			);
+			name = "Pars Player";
+			productName = "Pars Player";
+			productReference = CF21939C2D329D080093D376 /* Pars Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2193942D329D080093D376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CF21939B2D329D080093D376 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+				};
+			};
+			buildConfigurationList = CF2193972D329D080093D376 /* Build configuration list for PBXProject "Pars Player" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2193932D329D080093D376;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CF21939D2D329D080093D376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF21939B2D329D080093D376 /* Pars Player */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF21939A2D329D080093D376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D77024C8EF6D702435957C96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pars Player/Pods-Pars Player-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pars Player/Pods-Pars Player-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pars Player/Pods-Pars Player-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E1CBADA830372A820CD6D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pars Player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2193982D329D080093D376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF2193A92D329D090093D376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF2193AA2D329D090093D376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CF2193AC2D329D090093D376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0236F6EDF48D7DF49F4CC786 /* Pods-Pars Player.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Pars Player/Pars_Player.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pars Player/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pars-Player-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikmet.Pars-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pars Player/Pars Player-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CF2193AD2D329D090093D376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46F449EF8830C0713E9DB18 /* Pods-Pars Player.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Pars Player/Pars_Player.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pars Player/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pars-Player-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikmet.Pars-Player";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pars Player/Pars Player-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2193972D329D080093D376 /* Build configuration list for PBXProject "Pars Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2193A92D329D090093D376 /* Debug */,
+				CF2193AA2D329D090093D376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2193AB2D329D090093D376 /* Build configuration list for PBXNativeTarget "Pars Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2193AC2D329D090093D376 /* Debug */,
+				CF2193AD2D329D090093D376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2193942D329D080093D376 /* Project object */;
+}
