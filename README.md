@@ -57,8 +57,18 @@ Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U format�
 
 ## 📁 Proje Yapısı
 
-
-
+```
+Pars Player/
+├── Models/
+│   └── Channel.swift          # Kanal modeli
+├── ViewModels/
+│   └── ChannelsViewModel.swift # Kanal listesi yönetimi
+├── Views/
+│   ├── ContentView.swift      # Ana görünüm
+│   └── PlayerView.swift       # Video oynatıcı
+├── Utils/
+│   └── M3UParser.swift        # M3U dosya parser'ı
+```
 
 ## Kullanılan Kütüphaneler
 
