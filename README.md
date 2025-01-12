@@ -2,7 +2,7 @@
 
 Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U formatındaki IPTV listelerini yükleyebilir ve canlı yayınları izleyebilirsiniz.
 
-## Özellikler
+## 🚀 Özellikler
 
 - M3U dosyası yükleme desteği
 - URL üzerinden M3U listesi yükleme
@@ -12,7 +12,7 @@ Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U format�
 - Oynatma kontrolleri (play, pause, stop)
 - Koyu tema
 
-## Teknolojiler
+## 🛠 Teknolojiler
 
 - Swift 5
 - SwiftUI
@@ -20,44 +20,42 @@ Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U format�
 - Carthage
 - CocoaPods
 
-## Gereksinimler
+## 📋 Gereksinimler
 
 - macOS 11.0 veya üzeri
 - Xcode 14.0 veya üzeri
 - CocoaPods
 - Carthage
 
-## Kurulum
+## 💻 Kurulum
 
 1. Repository'yi klonlayın:
-bash
-git clone https://github.com/htutuncu/Pars-Player.git
-cd Pars-Player
+    ```bash
+    git clone https://github.com/htutuncu/Pars-Player.git
+    cd Pars-Player
+    ```
+
 2. CocoaPods'u yükleyin (eğer yüklü değilse):
-bash
-sudo gem install cocoapods
+    ```bash
+    sudo gem install cocoapods
+    ```
+
 3. Carthage'ı yükleyin (eğer yüklü değilse):
-bash
-brew install carthage
+    ```bash
+    brew install carthage
+    ```
+
 4. Bağımlılıkları yükleyin:
-bash
-pod install
-carthage update --platform macOS
-5. Pars Player.xcworkspace dosyasını Xcode ile açın
+    ```bash
+    pod install
+    carthage update --platform macOS
+    ```
 
-6. Projeyi derleyin ve çalıştırın (⌘R)
+5. `Pars Player.xcworkspace` dosyasını Xcode ile açın
 
-## Proje Yapısı
-Pars Player/
-├── Models/
-│ └── Channel.swift # Kanal modeli
-├── ViewModels/
-│ └── ChannelsViewModel.swift # Kanal listesi yönetimi
-├── Views/
-│ ├── ContentView.swift # Ana görünüm
-│ └── PlayerView.swift # Video oynatıcı
-├── Utils/
-│ └── M3UParser.swift # M3U dosya parser'ı
+6. Projeyi derleyin ve çalıştırın (`⌘R`)
+
+## 📁 Proje Yapısı
 
 
 
