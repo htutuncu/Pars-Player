@@ -1,18 +1,18 @@
 # Pars Player
 
-Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U formatındaki IPTV listelerini yükleyebilir ve canlı yayınları izleyebilirsiniz.
+Pars Player is an IPTV player developed for macOS. You can load IPTV lists in M3U format and watch live streams.
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- M3U dosyası yükleme desteği
-- URL üzerinden M3U listesi yükleme
-- Kanal arama
-- Tam ekran desteği
-- Canlı yayın oynatma
-- Oynatma kontrolleri (play, pause, stop)
-- Koyu tema
+- M3U file loading support
+- M3U list loading from URL
+- Channel search
+- Fullscreen support
+- Live stream playback
+- Playback controls (play, pause, stop)
+- Dark theme
 
-## 🛠 Teknolojiler
+## 🛠 Technologies
 
 - Swift 5
 - SwiftUI
@@ -20,107 +20,108 @@ Pars Player, macOS için geliştirilmiş bir IPTV oynatıcısıdır. M3U format�
 - Carthage
 - CocoaPods
 
-## 📋 Gereksinimler
+## 📋 Requirements
 
-- macOS 11.0 veya üzeri
-- Xcode 14.0 veya üzeri
+- macOS 11.0 or later
+- Xcode 14.0 or later
 - CocoaPods
 - Carthage
 
-## 💻 Kurulum
+## 💻 Installation
 
-1. Repository'yi klonlayın:
+1. Clone the repository:
     ```bash
     git clone https://github.com/htutuncu/Pars-Player.git
     cd Pars-Player
     ```
 
-2. CocoaPods'u yükleyin (eğer yüklü değilse):
+2. Install CocoaPods (if not installed):
     ```bash
     sudo gem install cocoapods
     ```
 
-3. Carthage'ı yükleyin (eğer yüklü değilse):
+3. Install Carthage (if not installed):
     ```bash
     brew install carthage
     ```
 
-4. Bağımlılıkları yükleyin:
+4. Install dependencies:
     ```bash
     pod install
     carthage update --platform macOS
     ```
 
-5. `Pars Player.xcworkspace` dosyasını Xcode ile açın
+5. Open `Pars Player.xcworkspace` with Xcode
 
-6. Projeyi derleyin ve çalıştırın (`⌘R`)
+6. Build and run the project (`⌘R`)
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 Pars Player/
 ├── Models/
-│   └── Channel.swift          # Kanal modeli
+│   └── Channel.swift          # Channel model
 ├── ViewModels/
-│   └── ChannelsViewModel.swift # Kanal listesi yönetimi
+│   └── ChannelsViewModel.swift # Channel list management
 ├── Views/
-│   ├── ContentView.swift      # Ana görünüm
-│   └── PlayerView.swift       # Video oynatıcı
+│   ├── ContentView.swift      # Main view
+│   └── PlayerView.swift       # Video player
 ├── Utils/
-│   └── M3UParser.swift        # M3U dosya parser'ı
+│   └── M3UParser.swift        # M3U file parser
 ```
 
-## Kullanılan Kütüphaneler
+## 📚 Libraries Used
 
 ### VLCKit
-VLCKit, VideoLAN'ın VLC media player'ının macOS uygulamaları için wrapper'ıdır. Video oynatma özellikleri için kullanılmıştır.
+VLCKit is a wrapper for VideoLAN's VLC media player for macOS applications. It is used for video playback features.
 
-Entegrasyon:
-1. Podfile'a eklendi:
-ruby
-pod 'VLCKit'
+#### Integration:
+1. Added to Podfile:
+    ```ruby
+    pod 'VLCKit'
+    ```
 
-2. PlayerView.swift'te VLCMediaPlayer kullanıldı:
-swift
-import VLCKit
+2. Used VLCMediaPlayer in PlayerView.swift:
+    ```swift
+    import VLCKit
+    ```
 
+## ⭐️ Feature Details
 
-## Özellik Detayları
+### M3U File Support
+- Load local M3U files
+- Download M3U list from URL
+- Parse EXTINF tags
+- Read channel name, group, and logo information
 
-### M3U Dosya Desteği
-- Yerel M3U dosyalarını yükleme
-- URL üzerinden M3U listesi indirme
-- EXTINF etiketlerini parse etme
-- Kanal adı, grup ve logo bilgilerini okuma
+### Video Player
+- VLCKit integration
+- Fullscreen support
+- Playback controls
+- Time bar
+- Volume control
 
-### Video Oynatıcı
-- VLCKit entegrasyonu
-- Tam ekran desteği
-- Oynatma kontrolleri
-- Zaman çubuğu
-- Ses kontrolü
+### User Interface
+- Modern interface with SwiftUI
+- Dark theme support
+- Responsive design
+- Channel search functionality
+- Sidebar navigation
 
-### Kullanıcı Arayüzü
-- SwiftUI ile modern arayüz
-- Koyu tema desteği
-- Responsive tasarım
-- Kanal arama özelliği
-- Sidebar navigasyonu
+## 🤝 Contributing
 
-## Katkıda Bulunma
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-1. Bu repository'yi fork edin
-2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
+## 📝 License
 
-## Lisans
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-Bu proje MIT lisansı altında lisanslanmıştır - detaylar için [LICENSE.md](LICENSE.md) dosyasına bakın.
-
-## İletişim
+## 📫 Contact
 
 Hikmet Tütüncü - [@htutuncu](https://github.com/htutuncu)
 
-Proje Linki: [https://github.com/htutuncu/Pars-Player](https://github.com/htutuncu/Pars-Player)
+Project Link: [https://github.com/htutuncu/Pars-Player](https://github.com/htutuncu/Pars-Player)
