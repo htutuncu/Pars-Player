@@ -1,7 +1,7 @@
 import Foundation
 
-struct Channel: Identifiable, Hashable {
-    let id = UUID()
+struct Channel: Codable, Identifiable, Equatable {
+    let id: String
     let name: String
     let url: URL
     

@@ -72,7 +72,7 @@ class VLCPlayerManager: ObservableObject {
         DispatchQueue.main.async {
             self.currentPosition = self.player.position
             self.currentTime = self.formatTime(Int(self.player.time.intValue))
-            self.totalTime = self.formatTime(Int(self.player.media.length.intValue))
+            self.totalTime = self.formatTime(Int(self.player.media?.length.intValue ?? 0))
         }
     }
 

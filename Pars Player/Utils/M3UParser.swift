@@ -36,6 +36,7 @@ class M3UParser {
                 // URL satırı
                 if let url = URL(string: trimmedLine) {
                     let channel = Channel(
+                        id: UUID().uuidString,
                         name: currentName ?? "Unnamed Channel",
                         url: url,
                         group: currentGroup,
