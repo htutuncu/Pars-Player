@@ -2,14 +2,17 @@ import SwiftUI
 import Combine
 
 class ChannelsViewModel: ObservableObject {
-    @Published var channels: [Channel] = []
+    @Published private(set) var channels: [Channel] = []
     @Published var selectedChannel: Channel?
     @Published var searchText: String = ""
     @Published private(set) var filteredChannels: [Channel] = []
     
+    @AppStorage("channels") private var storedChannels: Data?
+    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
+        loadChannels()
         // Debounce ile arama işlemini optimize et
         $searchText
             .debounce(for: .milliseconds(300), scheduler: DispatchQueue.main)
@@ -41,8 +44,16 @@ class ChannelsViewModel: ObservableObject {
             if let url = panel.url {
                 do {
                     let content = try String(contentsOf: url, encoding: .utf8)
-                    self.channels = M3UParser.parse(content: content)
+                    if (self.channels.count == 0) {
+                        self.channels = M3UParser.parse(content: content)
+                    } else {
+                        let channels = M3UParser.parse(content: content)
+                        channels.forEach { channel in
+                            self.add(channel: channel)
+                        }
+                    }
                     self.filteredChannels = self.channels // İlk yükleme için
+                    saveChannels()
                 } catch {
                     print("Error loading file: \(error)")
                 }
@@ -95,6 +106,7 @@ class ChannelsViewModel: ObservableObject {
                         DispatchQueue.main.async {
                             self.channels = M3UParser.parse(content: content)
                             self.filteredChannels = self.channels
+                            self.saveChannels()
                         }
                     } else {
                         // Veriyi metne dönüştürme hatası
@@ -120,4 +132,38 @@ class ChannelsViewModel: ObservableObject {
         }
 
     }
-} 
+    
+    func reloadChannels() {
+        loadChannels()
+        filteredChannels = channels
+    }
+    
+    func add(channel: Channel) {
+        if let index = channels.firstIndex(where: { $0.id == channel.id || $0.url == channel.url }) {
+            channels[index] = channel
+        } else {
+            channels.append(channel)
+        }
+        channels.sort { $0.name < $1.name }
+        filteredChannels = channels
+        saveChannels()
+    }
+    
+    func remove(channel: Channel) {
+        channels = channels.filter { $0.id != channel.id }
+        filteredChannels = channels
+        saveChannels()
+    }
+    
+    fileprivate func loadChannels() {
+        if let data = storedChannels, let value = try? JSONDecoder().decode([Channel].self, from: data) {
+            self.channels = value
+        }
+    }
+    
+    fileprivate func saveChannels() {
+        if let data = try? JSONEncoder().encode(channels) {
+            self.storedChannels = data
+        }
+    }
+}

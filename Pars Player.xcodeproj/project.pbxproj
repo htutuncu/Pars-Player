@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541A7FE02DCD5EF600D73005 /* Schwifty in Frameworks */ = {isa = PBXBuildFile; productRef = 541A7FDF2DCD5EF600D73005 /* Schwifty */; };
 		CFD0908E2D33CC9400A19BE6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0908D2D33CC9400A19BE6 /* AudioToolbox.framework */; };
 		CFD090902D33CC9C00A19BE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0908F2D33CC9C00A19BE6 /* AVFoundation.framework */; };
 		CFD090922D33CCA400A19BE6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD090912D33CCA400A19BE6 /* CFNetwork.framework */; };
@@ -81,6 +82,7 @@
 				CFD090922D33CCA400A19BE6 /* CFNetwork.framework in Frameworks */,
 				CFD090902D33CC9C00A19BE6 /* AVFoundation.framework in Frameworks */,
 				CFD0908E2D33CC9400A19BE6 /* AudioToolbox.framework in Frameworks */,
+				541A7FE02DCD5EF600D73005 /* Schwifty in Frameworks */,
 				EE91560E972F10ADADBEA763 /* Pods_Pars_Player.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +192,9 @@
 			);
 			mainGroup = CF2193932D329D080093D376;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				541A7FDE2DCD5EF600D73005 /* XCRemoteSwiftPackageReference "Schwifty" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CF21939D2D329D080093D376 /* Products */;
 			projectDirPath = "";
@@ -462,6 +467,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		541A7FDE2DCD5EF600D73005 /* XCRemoteSwiftPackageReference "Schwifty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/curzel-it/Schwifty.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		541A7FDF2DCD5EF600D73005 /* Schwifty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 541A7FDE2DCD5EF600D73005 /* XCRemoteSwiftPackageReference "Schwifty" */;
+			productName = Schwifty;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF2193942D329D080093D376 /* Project object */;
 }

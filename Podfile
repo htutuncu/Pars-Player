@@ -6,6 +6,7 @@ target 'Pars Player' do
   use_frameworks!
 
   # Pods for Pars Player
-pod 'VLCKit', '~>3.3.0'
+pod 'VLCKit', '~>3.6.0'
+pod 'Swinject'
 
 end
